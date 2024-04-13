@@ -30,7 +30,7 @@ function game() {
     while (roundsPlayed < 5) {
         let playerSelection = prompt('Enter your choice (Rock, Paper, or Scissors):');
         if (!playerSelection) {
-            alert('No input detected. Game will resume until 5 valid rounds are played.');
+            alert('No input detected. Please enter a valid choice to play.');
             continue;
         }
 
@@ -64,5 +64,5 @@ function game() {
 
 function startGame() {
     document.getElementById('results').innerHTML = ''; // Clear previous results
-    game();
+    game(); // Start the game logic
 }
